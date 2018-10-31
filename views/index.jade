@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  each group in data
+    each instance in group.Instances
+      p= instance.privateIpAddress
+    
+
